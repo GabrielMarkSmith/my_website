@@ -1,0 +1,9 @@
+body {
+    position: static;
+    margin: 0;
+    border: none;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: white;
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+}

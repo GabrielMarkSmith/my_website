@@ -1,0 +1,180 @@
+/* 
+Top Navigation Styles /shared_styles/top_nav.css
+Global Styles /shared_styles/global.css
+*/
+
+
+/* Hero Section Styles */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: calc(80vh - 100px);
+    width: 100vw;
+    margin: 0;
+    /* border: 5px solid yellow; */
+    padding: 0;
+}
+
+.hero-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    height: calc(80vh - 100px);
+    width: 90vw;
+    overflow: hidden;
+    isolation: isolate;
+    margin: 0;
+    /* border: 5px solid green; */
+    padding: 0;
+}
+
+.hero-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: calc(80vh - 100px);
+    width: 100%;
+    margin: 0;
+    /* border: 5px solid blue; */
+    padding: 0;
+    overflow: hidden;
+}
+
+.hero-image {
+    max-height: 50vh;
+    max-height: 30vw;
+    margin: 0;
+    border: 5px solid purple;
+    padding: 0;
+    -webkit-mask-image: radial-gradient(
+        ellipse,
+        #1a1a1a 60%,
+        transparent 60%
+        );
+    mask-image: radial-gradient(
+        ellipse,
+        #1a1a1a 60%,
+        transparent 60%
+        );
+}
+
+.hero-text-container {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(80vh - 100px);
+    width: 100%;
+    margin: 0;
+    /* border: 5px solid red; */
+    padding: 0;
+    font-size: 20px;
+    z-index: 20;
+}
+
+.hero-text,
+.hero-text-container h3 {
+    width: 75%;
+    text-align: center;
+    padding-right: 10vw;
+    /* border: 5px solid purple; */
+}
+
+/* Article Styles */
+
+.article-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /* border: 5px solid red; */
+    padding: 20px 0 20px 0;
+}
+
+.article {
+    height: auto;
+    width: 70%;
+    margin: 0;
+    /* border: 5px solid green; */
+    padding: 0;
+    background-color: #1a1a1a;
+    color: white;
+
+}
+
+.article-body {
+    font-size: 1.1rem;
+}
+
+
+
+
+
+/* Form Styles */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.contact-form {
+    display: grid;
+    width: 70%;
+    margin: 0;
+    border: 5px solid green;
+    padding: 10px 20px 0 20px;
+}
+
+.form-title {
+    font-size: 1.5rem;
+}
+
+.form-container label {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#message {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form-container input[type='text'] {
+    height: 20px; /* FIXME: Why isn't this doing anything? */
+    padding: 20px; /* FIXME: Why isn't this doing anything? */
+}
+
+.form-container button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    width: 20%;
+    background-color: rgb(74, 161, 74);
+    color: white;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.form-container button:hover {
+    background-color: rgb(53, 117, 53);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
