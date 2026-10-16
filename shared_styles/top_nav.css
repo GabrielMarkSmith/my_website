@@ -9,18 +9,26 @@
     height: 100px;
     width: 100vw;
     /* border: 5px solid red; */
-    background-color: #1a1a1a;
+    background-color: #111111;
     overflow: hidden;
     z-index: 100;
 }
 
+/* Side Spacer Styles */
 
-/* Home Button Image Styles */
-
-.home-btn-container-spacer {
-    width: 50px;
+.top_nav_side_spacer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
     border: 1px solid green;
 }
+
+.top_nav_side_spacer a {
+    display: block;
+}
+
+/* Home Button Image Styles */
 
 .home-btn-container {
     display: flex;
@@ -55,15 +63,6 @@
         );
 }
 
-/* Top Navigation Spacer Styles */
-
-.top-nav-spacer {
-    flex-grow: 1;
-    border: 1px solid white;
-}
-
-
-
 /* Top Navigation Main Menu Styles */
 
 .top-nav ul {
@@ -77,11 +76,21 @@
 }
 
 .top-nav a {
-    font-size: 1.4rem;
-    font-weight: regular;
     color: white;
     text-decoration: none;
     transition: color 0.1s ease-in-out;
+}
+
+.nav-text-base {
+    /* This is the font controller for the top navigation menu items */
+    /* font-family: "Zen Kaku Gothic Antique", sans-serif; */
+    font-size: 1.4rem;
+    font-weight: regular;
+}
+
+.nav-text-bolder {
+    font-size: 1.8 rem;
+    font-weight: bolder;
 }
 
 .top-nav a:hover {
@@ -92,65 +101,29 @@
   position: relative;
 }
 
-.submenu {
-  position: absolute;
-  top: 100%;
-  left: 0;
+/* Search Bar Styles */
 
-  min-width: 180px;
-  padding: 8px;
-  margin: 0;
-  list-style: none;
-
-  background: none;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(8px);
-  transition:
-    opacity 150ms ease,
-    transform 150ms ease,
-    visibility 150ms;
-}
-
-.submenu a:hover {
-  padding: 8px;
-  color: rgb(136, 233, 136);
-}
-
-.nav-item:hover .submenu,
-.nav-item:focus-within .submenu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-/* Top Navigation Login Container Styles */
-
-.login-container {
+.search-box {
     display: flex;
-    gap: 10px;
-    border: 1px solid red;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 8px 12px;
 }
 
-.login-container button {
-    background-color: #1a1a1a;
-    color: white;
-    border: 1px solid blue;
-    padding: 5px 10px;
+.search-box input {
+    display: hidden;
+    border: none;
+    outline: none;
+    flex: 1;
+    min-width: 0;
+    background-color: transparent;
+}
+
+.search-box button {
+    background: none;
+    border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 18px;
 }
 
-.login-container button:hover {
-    background-color: blue;
-    color: #1a1a1a;
-}
-
-.login-container-spacers {
-    /* flex-grow: 1; */
-    width: 50px;
-    border: 1px solid green;
-}

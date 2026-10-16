@@ -9,15 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
-    <title>Contact me</title>
+    <title>Professional</title>
 </head>
 <body>
     <nav class="top-nav">
-        <img src="/images/headshot.jpeg" alt="Gabriel Mark Smith Headshot">
+        <div class="top_nav_side_spacer">
+            <a href="/pages/home/home.html" class="home-btn">
+                <img src="/images/headshot.jpeg" alt="Gabriel Mark Smith Headshot" class="home-btn-img">
+            </a>
+        </div>
         <ul>
-            <li id="home-btn" class="nav-item">
-                <a href="/pages/home/home.html">Home</a>
-            </li>
             <li id="professional-btn" class="nav-item">
                 <a href="/pages/professional/professional.html">Professional</a>
             </li>
@@ -27,6 +28,13 @@
             <li id="contact-btn" class="nav-item">
                 <a href="/pages/contact_me/contact_me.html">Contact Me</a></li>
         </ul>
-    </nav> 
+        <div class="top_nav_side_spacer"> 
+            <div class="search-box">
+                <input type="text" placeholder="Search here...">
+                <button type="button" aria-label="Search">🔍</button>
+            </div>
+        </div>
+    </nav>
 </body>
+<script src="script.js"></script>
 </html>
